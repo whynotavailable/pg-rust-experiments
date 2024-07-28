@@ -1,5 +1,3 @@
-use std::str::FromStr;
-
 use sqlx::postgres::types::PgHstore;
 use sqlx::postgres::PgPoolOptions;
 use sqlx::types::Uuid;
