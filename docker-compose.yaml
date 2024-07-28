@@ -1,0 +1,16 @@
+# Use postgres/example user/password credentials
+services:
+  db:
+    image: postgres
+    ports:
+      - 5432:5432
+    restart: always
+    shm_size: 128mb
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: test
+
+volumes:
+  pg_data:
